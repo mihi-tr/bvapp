@@ -1,0 +1,13 @@
+{
+    "name":"Bad Voltage App",
+    "description":"A webapp for the Bad Voltage Podcast",
+    "icons": {
+        "128": "/static/img/logo-128.png"
+        },
+    "developer": {
+        "name": "Michael Bauer",
+        "url": "http://tentacleriot.eu"
+        },
+    "default_locale": "en",
+    "version":"0.1"
+}

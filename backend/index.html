@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="badVoltageApp">
+    <head>
+        <title>Bad Voltage App</title>
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/stylesheet.css" />
+        <script src="/static/js/angular.min.js"></script>
+        <script src="/static/js/controller.js"></script>
+    </head>
+    <body ng-controller="itemListCtrl">
+        <div class="container">
+            <img
+            src="http://www.badvoltage.org/wp-content/uploads/2013/10/logo1.png"
+            width="100%" />
+            <button id="install">Install</button>
+            <ul>
+                <li ng-repeat="episode in episodes">
+                    <a href="{{episode.link}}">{{episode.title}}</a>
+                    <p>{{episode.description}}</p>
+                    <audio controls='True'>
+                        <source src="{{episode.enclosure}}" type="audio/ogg;
+                        codecs=vorbis" />
+                    </audio>
+                </li>
+            </ul>
+            <div class="footer">
+            <p>A small webapp for the Bad Voltage Podcast by <a
+            href="http://tentacleriot.eu">Michael Bauer</a>. Source on <a
+            href="http://github.com/mihi-tr/bvapp/">Github</a>
+            </p>
+            </div>
+        </div>
+    </body>
+</html>

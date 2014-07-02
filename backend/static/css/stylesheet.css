@@ -1,0 +1,45 @@
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+    }
+
+container {
+    padding: 10px;
+    width: 100%;
+    }
+
+h1 {
+    font-family: sans;
+    }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+li {
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    }
+li p {
+    font-size: 80%;
+    }
+
+li > a {
+    color: white;
+    font-family: sans;
+    font-weight: bold;
+    }
+
+.footer {
+    font-size: 80%;
+    }
+
+#install {
+    display: none;
+    }
