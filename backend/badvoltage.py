@@ -16,7 +16,7 @@ class MainPage(webapp2.RequestHandler):
         if data is None:
             with open("index.html") as f:
                 data = f.read()
-                memcache.set("index",data,3600)
+                memcache.set("index",data,600)
         self.response.write(data) 
 
     def head(self):
@@ -34,7 +34,7 @@ class Feed(webapp2.RequestHandler):
             u = urllib2.urlopen("http://www.badvoltage.org/feed/ogg/")
             r = lxml.etree.fromstring(u.read())
             items = [self.process_item(i) for i in r.xpath("//item")]
-            memcache.add('feed',json.dumps(items),3600)
+            memcache.add('feed',json.dumps(items),600)
             self.response.write(json.dumps(items))
     
     def process_item(self,i):
