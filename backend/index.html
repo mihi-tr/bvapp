@@ -15,7 +15,7 @@
             width="100%" />
             <ul>
                 <li ng-repeat="episode in episodes">
-                    <a href="{{episode.link}}">{{episode.title}}</a>
+                    <a href="{{episode.link}}" target="_new">{{episode.title}}</a>
                     <p>{{episode.description}}</p>
                     <audio controls='True'>
                         <source src="{{episode.enclosure}}" type="audio/ogg;
